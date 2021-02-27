@@ -1,0 +1,140 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Krona One', sans-serif;
+  text-align: center;
+  padding: 40px;
+  font-size: 20px;
+}
+
+.search-input {
+  margin-right: 15px;
+  margin-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 2px;
+  padding-bottom: 6px;
+  height: 40px;
+  border-color: #665e5e;
+  box-shadow: 1px 1px rgba(0, 0, 0, 0.25), 1px 1px rgba(0, 0, 0, 0.22);
+  border-width: 2px;
+  border-radius: 50px;
+  font-family: inherit;
+  font-size: inherit;
+  text-indent: 5px;
+  outline: none;
+}
+
+.search-input::placeholder {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  height: 40px;
+  min-width: 100px;
+  margin-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 6px;
+  border-radius: 50px;
+
+  border-color: rgba(22, 22, 22, 0.705);
+  background-color: rgba(22, 22, 22, 0.705);
+  color: #ffffff;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+
+  box-shadow: 1px 1px rgba(0, 0, 0, 0.25), 1px 1px rgba(0, 0, 0, 0.22);
+}
+
+.btn:hover {
+  background-color: #055207;
+  border-color: #055207;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px;
+}
+
+.gallery img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.photo-card {
+  width: 300px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.25),
+    1px 1px 1px 1px rgba(0, 0, 0, 0.22);
+}
+
+.stats {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.stats-item {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+}
+
+.stats-item i {
+  margin-bottom: 5px;
+  color: #36454f;
+}
+
+.is-hidden {
+  display: none;
+}
+
+
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
